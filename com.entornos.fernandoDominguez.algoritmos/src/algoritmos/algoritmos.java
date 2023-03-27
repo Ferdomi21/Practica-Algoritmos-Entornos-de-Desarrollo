@@ -1,4 +1,4 @@
-package com.entornos.fernandoDominguez.algoritmos;
+package algoritmos;
 
 public class algoritmos {
 
@@ -31,16 +31,16 @@ public class algoritmos {
 	 * @return el factorial de dicho numero
 	 */
 
-	static int factorial(int n) {
+	static long factorial(int n) {
 		if (n == 0)
-			return 1;
+			return (long) 1;
 
 		return n * factorial(n - 1);
 	}
-	
+
 	/**
-	 * Metodo que recibe un número entero y devuelve true o false en función de
-	si es primo o no.
+	 * Metodo que recibe un número entero y devuelve true o false en función de si
+	 * es primo o no.
 	 * 
 	 * @param el numero entero que quiera el usuario
 	 * @return si es primo o no
