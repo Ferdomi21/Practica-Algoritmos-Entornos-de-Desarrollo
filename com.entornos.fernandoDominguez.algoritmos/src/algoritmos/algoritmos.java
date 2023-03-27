@@ -3,16 +3,18 @@ package algoritmos;
 public class algoritmos {
 
 	/**
-	 * Metodo para recibir un numero entero y devolver el numero de fibonacci de
+	 * Metodo para recibir un numero entero y devolver el numero de Fibonacci de
 	 * dicho numero.
 	 * 
+	 * @param n el numero que quiera el usuario
+	 * @return devuelve el numero de Fibonacci de ese numero
 	 * @author Fernando
 	 * 
 	 * @version 1.0
 	 * 
 	 */
 
-	static int fibonacci(int n) {
+	public static int fibonacci(int n) {
 		int a = 0, b = 1, c;
 		if (n == 0)
 			return a;
@@ -25,13 +27,13 @@ public class algoritmos {
 	}
 
 	/**
-	 * Recibe un número entero y devuelve el factorial de dicho número.
+	 * Recibe un numero entero y devuelve el factorial de dicho numero.
 	 * 
-	 * @param el numero entero que quiera el usuario
+	 * @param n el numero entero que quiera el usuario
 	 * @return el factorial de dicho numero
 	 */
 
-	static long factorial(int n) {
+	public static long factorial(int n) {
 		if (n == 0)
 			return (long) 1;
 
@@ -39,15 +41,15 @@ public class algoritmos {
 	}
 
 	/**
-	 * Metodo que recibe un número entero y devuelve true o false en función de si
+	 * Metodo que recibe un numero entero y devuelve true o false en funcion de si
 	 * es primo o no.
 	 * 
-	 * @param el numero entero que quiera el usuario
+	 * @param num el numero entero que quiera el usuario
 	 * @return si es primo o no
 	 * 
 	 */
 
-	static boolean primo(int num)
+	public static boolean primo(int num)
 
 	{
 		int contador = 0;

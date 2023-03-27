@@ -27,8 +27,9 @@ public class Principal {
 		for (int i=0 ; i<numeros.length ; i++) {
 			resultadoPrimos[i] = algoritmos.primo(numeros[i]);
 			
+		
 		}
-		int nose = 0;
+		
 	}
 
 }
