@@ -24,4 +24,17 @@ public class algoritmos {
 		return b;
 	}
 
+	/**
+	 * Recibe un número entero y devuelve el factorial de dicho número.
+	 * 
+	 * @param el numero entero que quiera el usuario
+	 * @return el factorial de dicho numero
+	 */
+
+	static int factorial(int n) {
+		if (n == 0)
+			return 1;
+
+		return n * factorial(n - 1);
+	}
 }
