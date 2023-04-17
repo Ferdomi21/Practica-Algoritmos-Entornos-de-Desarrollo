@@ -32,4 +32,12 @@ class TestCase {
 		assertEquals(8, MisArrays.media(array3));
 	}
 
+	@Test
+	void testMediana() {
+		assertEquals(2, MisArrays.mediana(array1));
+		assertEquals(2.5, MisArrays.mediana(array2));
+		assertEquals(8, MisArrays.mediana(array3));
+	}
+	
+	
 }
