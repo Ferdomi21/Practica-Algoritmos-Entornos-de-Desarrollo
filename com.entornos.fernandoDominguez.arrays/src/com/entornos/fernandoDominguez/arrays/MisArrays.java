@@ -5,9 +5,9 @@ import java.util.Arrays;
 public abstract class MisArrays {
 
 	/**
-	 * Calcular media aritmética
+	 * Calcula media aritmética
 	 * 
-	 * @param array en el cual nos pasará un numero para calcular la media
+	 * @param array en el cual nos pasara un numero para calcular la media
 	 * @return media aritmetica
 	 */
 	public static double media(int array[]) {
@@ -21,7 +21,8 @@ public abstract class MisArrays {
 	}
 
 	/**
-	 * Calcular la mediana (si es par utilizamos los dos numeros centrales,impar solamente el numero central)
+	 * Calcula la mediana (si es par utilizamos los dos numeros centrales,impar
+	 * solamente el numero central)
 	 * 
 	 * @param array en el cual nos pasará un numero para calcular la mediana
 	 * @return mediana
@@ -32,11 +33,25 @@ public abstract class MisArrays {
 		int mitad = array.length / 2;
 
 		if (array.length % 2 == 0) {
-			mediana = (double)(array[mitad - 1] + array[mitad]) / 2;
+			mediana = (double) (array[mitad - 1] + array[mitad]) / 2;
 		} else {
-			mediana = (double)array[mitad];
+			mediana = (double) array[mitad];
 		}
 		return mediana;
 	}
 
+	/**
+	 * Calcula el numero maximo de una serie de numeros
+	 * @param array de numeros entero para calcular el maximo
+	 * @return valor máximo
+	 */
+	public static int maximo(int[] array) {
+		int maximo = array[0];
+		for (int i = 1; i < array.length; i++) {
+			if (maximo < array[i]) {
+				maximo = array[i];
+			}
+		}
+		return maximo;
+	}
 }
