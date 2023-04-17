@@ -54,4 +54,22 @@ public abstract class MisArrays {
 		}
 		return maximo;
 	}
+	/**
+	 * Calcula el numero minimo de una serie de numeros
+	 * @param array de numero entero para calcular el minimo
+	 * @return valor minimo
+	 */
+	public static int minimo(int[] array) {
+		int minimo = array[0];
+		for (int i = 1; i < array.length; i++) {
+			if (minimo > array[i]) {
+				minimo = array[i];
+			}
+		}
+		return minimo;
+	}
+
+
+
+
 }

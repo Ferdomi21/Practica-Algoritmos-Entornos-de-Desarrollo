@@ -38,6 +38,7 @@ class TestCase {
 		assertEquals(2.5, MisArrays.mediana(array2));
 		assertEquals(8, MisArrays.mediana(array3));
 	}
+	
 	@Test
 	void testMaximo() {
 		assertEquals(5, MisArrays.maximo(array1));
@@ -45,4 +46,10 @@ class TestCase {
 		assertEquals(8, MisArrays.maximo(array3));
 	}
 	
+	@Test
+	void testMinimo() {
+		assertEquals(1, MisArrays.minimo(array1));
+		assertEquals(1, MisArrays.minimo(array2));
+		assertEquals(8, MisArrays.minimo(array3));
+	}
 }
